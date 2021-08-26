@@ -7,9 +7,17 @@ This notebook was developed and tested on a MacBook Air running macOS 11.5.1 and
 $ brew install pyenv
 $ pyenv install 3.9.5
 $ pyenv shell
+$ git clone git@github.com:bootstrapt/clipboard-health-wbd-notebook.git
 ```
 
-## Publishing
+## Running
+To run the notebook yourself, just run `jupyter notebook` after cloning the git project.
+```
+$ cd clipboard-health-wbd-notebook
+$ jupyter notebook
+```
+
+## Publishing to Github Pages
 To publish this notebook, update `./html/index.html` and push to github. 
 ```
 $ rm -f ./docs/index.html
