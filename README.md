@@ -12,6 +12,7 @@ $ pyenv shell
 ## Publishing
 To publish this notebook, update `./html/index.html` and push to github. 
 ```
+$ rm -f ./docs/index.html
 $ jupyter nbconvert pricing_wbd.ipynb --no-input --no-prompt --to=html --output-dir=docs --output=index.html
 $ git commit -am "updated ./docs/index.html with latest notebook output"
 $ git push
