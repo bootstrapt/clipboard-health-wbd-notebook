@@ -14370,8 +14370,11 @@ Shift Time                   object   True
 <ul>
 <li><code>Shift Start DoW</code>: the day of the week the shift started (e.g. Monday)</li>
 <li><code>Shift Length</code>: the length of the shift (<code>Shift End</code> - <code>Shift Start</code>)</li>
-<li><code>charge_rate_mean</code>: the mean of the <code>charge_rate_hourly</code> by <code>agent_type</code> where <code>Shift Status</code> is <em>verified</em></li>
-<li><code>charge_rate_premium</code>: the difference between the mean <code>charge_rate_hourly</code> and the <code>charge_rate_mean</code></li>
+<li><code>charge_rate_mode_by_hcp</code>: the mode of the <code>charge_rate_hourly</code> per <code>hcp_id</code></li>
+<li><code>charge_rate_premium_by_hcp</code>: the difference between <code>charge_rate_hourly</code> and <code>charge_rate_mode_by_hcp</code> </li>
+<li><code>charge_rate_mode_by_hcp_hcf</code>: the mode of the <code>charge_rate_hourly</code> per <code>hcp_id</code> and <code>hcf_id</code></li>
+<li><code>charge_rate_premium_by_hcp_hcf</code>: the difference between <code>charge_rate_hourly</code> and <code>charge_rate_mode_by_hcp_hcf</code></li>
+<li>category codes were added to columns ending in <code>(code)</code></li>
 </ul>
 <h5 id="Notes-on-shift-data-provided:">Notes on shift data provided:<a class="anchor-link" href="#Notes-on-shift-data-provided:">&#182;</a></h5><ul>
 <li>three sheets were provided, one with raw data and two with analyses that may hint toward important variables:<ul>
