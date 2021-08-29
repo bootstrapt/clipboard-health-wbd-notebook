@@ -13971,27 +13971,31 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Clipboard-Health-Pricing-WBD">Clipboard Health Pricing WBD<a class="anchor-link" href="#Clipboard-Health-Pricing-WBD">&#182;</a></h1><p><em>Jupyter notebook containing analysis for the Clipboard Health Pricing WBD exercise. Prepared by Nick Turner.</em></p>
-<ul>
+<h3 id="About">About<a class="anchor-link" href="#About">&#182;</a></h3><p>In order to be successful in a competitive marketplace, it's important for any company to have both a qualitative and quantitative understanding of their users and customers. Technology companies have the advantage of being able to collect a lot of data in almost real time. This comes with its own set of challenges, as processing all the data is not without challenges and costs.</p>
+<p>This document is an attempt to make some sense of the dataset provided for a pricing exercise. The goal is to understand more about the current pricing model and look for areas of opportunity to inform a new pricing model. It goes as far as exploartory data analysis and does not attempt to build statistical models that can be used to predict optimal pricing. That will be left as an exercise for data science and engineering.</p>
+<h5 id="Versions-of-this-document:">Versions of this document:<a class="anchor-link" href="#Versions-of-this-document:">&#182;</a></h5><ul>
 <li><a href="https://bootstrapt.github.io/clipboard-health-wbd-notebook/">github pages html version</a> (code output visible, blocks not visible)  </li>
 <li><a href="https://github.com/bootstrapt/clipboard-health-wbd-notebook/blob/main/pricing_wbd.ipynb">github notebook page</a> (code output and blocks visible)  </li>
-<li><a href="https://github.com/bootstrapt/clipboard-health-wbd-notebook">github project</a> (source code)  </li>
+<li><a href="https://github.com/bootstrapt/clipboard-health-wbd-notebook">github project</a> (source code)</li>
 </ul>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Table-of-Contents">Table of Contents<a class="anchor-link" href="#Table-of-Contents">&#182;</a></h3><ol>
-<li><a href="#1.-Initialization">Initialization</a>: covers initializing the project, setting up dependencies and configurations.</li>
-<li><a href="#2.-Load-Raw-Shift-Data">Load Raw Shift Data</a>: covers loading the source data and verifying that it matches what we expect.<ol>
+<li><a href="#1.-Initialization">Initialization</a> <em>setting up dependencies and configurations</em></li>
+<li><a href="#2.-Load-Raw-Shift-Data">Load Raw Shift Data</a>: <em>loading and verifying the source data</em><ol>
 <li><a href="#2a.-Load-Data">Load Data</a></li>
 <li><a href="#2b.-Verify-Data">Verify Data</a></li>
 </ol>
 </li>
-<li><a href="#3.-Transform-Data">Transform Data</a>: covers copying, transforming, and extending the raw data to get it ready for processing.</li>
-<li><a href="#4.-Explore-Data">Explore Data</a>: covers the data exploration.<ol>
+<li><a href="#3.-Transform-Data">Transform Data</a>: <em>copying, transforming, and extending the raw data</em></li>
+<li><a href="#4.-Explore-Data">Explore Data</a>: <em>making sense of the data</em><ol>
 <li><a href="#1.-Are-charge-rates-fixed-per-HCP?">Are charge rates fixed per HCP?</a></li>
 <li><a href="#2.-What-correlates-with-the-variance-in-charge-rates?">What correlates with the variance in charge rates?</a></li>
 <li><a href="#3.-What-correlates-with-Shift-Status?">What correlates with Shift Status?</a></li>
+</ol>
+</li>
+<li>Summary of Findings: <em>what we learned from the data</em><ol>
+<li>Learnings</li>
+<li>Limitations</li>
+<li>Recommendations</li>
 </ol>
 </li>
 </ol>
@@ -15517,6 +15521,16 @@ Legend for columns that were converted to categories:
 <h3 id="Reference">Reference<a class="anchor-link" href="#Reference">&#182;</a></h3><p>[1] pipenv numpy installation issue, the reason why warnings are suppressed above -- <a href="https://github.com/pypa/pipenv/issues/4576">Link 1</a>, <a href="https://github.com/numpy/numpy/issues/17784">Link 2</a></p>
 <p>[2] <a href="https://github.com/pandas-dev/pandas/issues/11562#issuecomment-155119476">mode lambda h/t</a></p>
 <p>[3] <a href="https://seaborn.pydata.org/generated/seaborn.pairplot.html">More on Seaborn pairplots</a></p>
+<p>EDA
+<a href="https://seaborn.pydata.org/tutorial/relational.html?highlight=line%20area">https://seaborn.pydata.org/tutorial/relational.html?highlight=line%20area</a></p>
+<p><a href="https://www.narrator.ai/blog/when-correlation-is-better-than-causation/">https://www.narrator.ai/blog/when-correlation-is-better-than-causation/</a></p>
+<p>docs
+<a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.rename.html#pandas.Series.rename">https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.rename.html#pandas.Series.rename</a></p>
+<p>ML
+<a href="https://github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects/blob/master/example-data-science-notebook/Example%20Machine%20Learning%20Notebook.ipynb">https://github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects/blob/master/example-data-science-notebook/Example%20Machine%20Learning%20Notebook.ipynb</a></p>
+<p><a href="https://nbviewer.jupyter.org/github/nborwankar/LearnDataScience/blob/master/notebooks/D3.%20K-Means%20Clustering%20Analysis.ipynb">https://nbviewer.jupyter.org/github/nborwankar/LearnDataScience/blob/master/notebooks/D3.%20K-Means%20Clustering%20Analysis.ipynb</a></p>
+<p>kmeans clustering
+<a href="https://stackoverflow.com/questions/6645895/calculating-the-percentage-of-variance-measure-for-k-means">https://stackoverflow.com/questions/6645895/calculating-the-percentage-of-variance-measure-for-k-means</a></p>
 
 </div>
 </div>
