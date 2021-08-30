@@ -9,17 +9,25 @@ $ brew install pyenv
 $ pyenv install 3.9.5
 $ pyenv shell
 ```
+
+##### Install pipenv
+```
+$ brew install pipenv
+```
+
 ##### Clone project and install dependencies
 ```
 $ git clone git@github.com:bootstrapt/clipboard-health-wbd-notebook.git
 $ cd clipboard-health-wbd-notebook
-$ pip install notebook pandas numpy scipy seaborn matplotlib
+$ export SYSTEM_VERSION_COMPAT=1
+$ pipenv install notebook pandas numpy scipy seaborn matplotlib
 ```
 
 ## Runtime
 To run the notebook yourself, just run `jupyter notebook` after cloning the git project.
 ```
 $ cd clipboard-health-wbd-notebook
+$ pipenv shell
 $ jupyter notebook
 ```
 
