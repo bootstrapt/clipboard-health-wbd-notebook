@@ -1,20 +1,15 @@
 # Clipboard Health WBD Practice Problem Notebook
-This repo contains files related to the Clipboard Health WBD practice problem I was asked to complete. I opted not to include the raw data file. 
+This repo contains files related to the Clipboard Health WBD practice problem I was asked to complete. Does not include raw data file. 
 
 ## Installation
-This notebook was developed and tested on a MacBook Air running macOS 11.5.1 and python 3.9.5 (using pyenv).
-##### Install pyenv
+This notebook was developed and tested on a MacBook Air running macOS 11.5.1.
+##### Install pyenv and pipenv
 ```
 $ brew install pyenv
 $ pyenv install 3.9.5
-$ pyenv shell
+$ pyenv shell 3.9.5
+$ pip install --user --upgrade pipenv
 ```
-
-##### Install pipenv
-```
-$ brew install pipenv
-```
-
 ##### Clone project and install dependencies
 ```
 $ git clone git@github.com:bootstrapt/clipboard-health-wbd-notebook.git
@@ -22,16 +17,16 @@ $ cd clipboard-health-wbd-notebook
 $ export SYSTEM_VERSION_COMPAT=1
 $ pipenv install notebook pandas numpy scipy seaborn matplotlib
 ```
+_Note: see references re: SYSTEM_VERSION_COMPAT_
 
-## Runtime
-To run the notebook yourself, just run `jupyter notebook` after cloning the git project.
+## Run Notebook
+From project root:
 ```
-$ cd clipboard-health-wbd-notebook
 $ pipenv shell
 $ jupyter notebook
 ```
 
-## Publishing to Github Pages
+## Publish to Github Pages
 To publish this notebook, update `./html/index.html` and push to github. 
 ##### Scripted
 ```
@@ -44,3 +39,6 @@ $ jupyter nbconvert pricing_wbd.ipynb --no-input --no-prompt --to=html --output-
 $ git commit -am "updated ./docs/index.html with latest notebook output"
 $ git push
 ```
+
+## References
+- [Note on SYSTEM_VERSION_COMPAT](https://github.com/pypa/pipenv/issues/4564#issuecomment-756625303)
