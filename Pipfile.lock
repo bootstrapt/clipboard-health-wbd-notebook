@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "f63489ffacc8ba4dc1e06248c4454a3acc9ae7a19327685eb7b9c353f14fb888"
+            "sha256": "0167157e6c6628d2acc0222f0b528d3e246c5c83a36f47a31dcd82c2d90918fb"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -207,6 +207,14 @@
             "markers": "python_version >= '2.7'",
             "version": "==0.3"
         },
+        "et-xmlfile": {
+            "hashes": [
+                "sha256:8eb9e2bc2f8c97e37a2dc85a09ecdcdec9d8a396530a6d5a33b30b9a92da0c5c",
+                "sha256:a2ba85d1d6a74ef63837eed693bcb89c3f752169b0e3e7ae5b16ca5e1b3deada"
+            ],
+            "markers": "python_version >= '3.6'",
+            "version": "==1.1.0"
+        },
         "ipykernel": {
             "hashes": [
                 "sha256:5314690a638f893e2cc3bf3d25042920e9fbb873f7d8263033390264caeb95f4",
@@ -220,7 +228,7 @@
                 "sha256:58b55ebfdfa260dad10d509702dc2857cb25ad82609506b070cf2d7b7df5af13",
                 "sha256:75b5e060a3417cf64f138e0bb78e58512742c57dc29db5a5058a2b1f0c10df02"
             ],
-            "markers": "python_version >= '3.7'",
+            "markers": "python_version >= '3.3'",
             "version": "==7.27.0"
         },
         "ipython-genutils": {
@@ -229,6 +237,14 @@
                 "sha256:eb2e116e75ecef9d4d228fdc66af54269afa26ab4463042e33785b887c628ba8"
             ],
             "version": "==0.2.0"
+        },
+        "ipywidgets": {
+            "hashes": [
+                "sha256:9f1a43e620530f9e570e4a493677d25f08310118d315b00e25a18f12913c41f0",
+                "sha256:e6513cfdaf5878de30f32d57f6dc2474da395a2a2991b94d487406c0ab7f55ca"
+            ],
+            "index": "pypi",
+            "version": "==7.6.3"
         },
         "jedi": {
             "hashes": [
@@ -275,6 +291,14 @@
                 "sha256:cfcda0873626150932f438eccf0f8bf22bfa92345b814890ab360d666b254146"
             ],
             "version": "==0.1.2"
+        },
+        "jupyterlab-widgets": {
+            "hashes": [
+                "sha256:5c1a29a84d3069208cb506b10609175b249b6486d6b1cbae8fcde2a11584fb78",
+                "sha256:caeaf3e6103180e654e7d8d2b81b7d645e59e432487c1d35a41d6d3ee56b3fef"
+            ],
+            "markers": "python_version >= '3.6'",
+            "version": "==1.0.0"
         },
         "kiwisolver": {
             "hashes": [
@@ -503,6 +527,14 @@
             ],
             "index": "pypi",
             "version": "==1.21.2"
+        },
+        "openpyxl": {
+            "hashes": [
+                "sha256:46af4eaf201a89b610fcca177eed957635f88770a5462fb6aae4a2a52b0ff516",
+                "sha256:6456a3b472e1ef0facb1129f3c6ef00713cebf62e736cd7a75bcc3247432f251"
+            ],
+            "index": "pypi",
+            "version": "==3.0.7"
         },
         "packaging": {
             "hashes": [
@@ -876,6 +908,13 @@
                 "sha256:b36a1c245f2d304965eb4e0a82848379241dc04b865afcc4aab16748587e1923"
             ],
             "version": "==0.5.1"
+        },
+        "widgetsnbextension": {
+            "hashes": [
+                "sha256:079f87d87270bce047512400efd70238820751a11d2d8cb137a5a5bdbaf255c7",
+                "sha256:bd314f8ceb488571a5ffea6cc5b9fc6cba0adaf88a9d2386b93a489751938bcd"
+            ],
+            "version": "==3.5.1"
         }
     },
     "develop": {}

@@ -10,6 +10,8 @@ scipy = "*"
 seaborn = "*"
 matplotlib = "*"
 notebook = "*"
+ipywidgets = "*"
+openpyxl = "*"
 
 [dev-packages]
 
