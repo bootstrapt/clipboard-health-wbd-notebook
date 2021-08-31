@@ -3,21 +3,25 @@ This repo contains files related to the Clipboard Health WBD practice problem I 
 
 ## Installation
 This notebook was developed and tested on a MacBook Air running macOS 11.5.1.
-##### Install pyenv and pipenv
+##### Install [pyenv](https://github.com/pyenv/pyenv#homebrew-on-macos) and [pipenv](https://pipenv.pypa.io/en/latest/install/#pragmatic-installation-of-pipenv)
 ```
+$ brew update
 $ brew install pyenv
 $ pyenv install 3.9.5
 $ pyenv shell 3.9.5
 $ pip install --user --upgrade pipenv
 ```
+_Notes:_
+- installing `pyenv` via `brew`, I did not need to update .zprofile per instructions
 ##### Clone project and install dependencies
 ```
 $ git clone git@github.com:bootstrapt/clipboard-health-wbd-notebook.git
 $ cd clipboard-health-wbd-notebook
 $ export SYSTEM_VERSION_COMPAT=1
-$ pipenv install notebook pandas numpy scipy seaborn matplotlib
+$ pipenv install notebook pandas numpy scipy seaborn matplotlib ipywidgets openpyxl
 ```
-_Note: see references re: SYSTEM_VERSION_COMPAT_
+_Notes:_ 
+- see references [1] re: SYSTEM_VERSION_COMPAT_
 
 ## Run Notebook
 From project root:
@@ -41,4 +45,4 @@ $ git push
 ```
 
 ## References
-- [Note on SYSTEM_VERSION_COMPAT](https://github.com/pypa/pipenv/issues/4564#issuecomment-756625303)
+[1] [Note on SYSTEM_VERSION_COMPAT](https://github.com/pypa/pipenv/issues/4564#issuecomment-756625303)
